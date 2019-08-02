@@ -5,8 +5,13 @@
 	<parent>
 		<groupId>org.oiue.services.templates</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.1</version>
+		<version>1.1.0-SNAPSHOT</version>
 	</parent>
+	<!-- <parent>
+		<groupId>org.oiue.services</groupId>
+		<artifactId>services</artifactId>
+		<version>1.1.0-SNAPSHOT</version>
+	</parent> -->
 	<packaging>bundle</packaging>
 
 	<name>OIUE service for template impl </name>
@@ -14,8 +19,22 @@
 	<url>http://maven.apache.org</url>
 
 	<dependencies>
+		<dependency>
+			<groupId>org.oiue.services.templates</groupId>
+			<artifactId>org.oiue.service.template.api</artifactId>
+			<version>${template.api.version}</version>
+		</dependency>
 	</dependencies>
 	<properties>
-		<project.activator>${artifactId}.Activator</project.activator>
+		<project.activator>${project.artifactId}.Activator</project.activator>
+		<project.import>
+javax.servlet.http,
+org.oiue.service.log,
+org.oiue.service.osgi,
+org.oiue.service.template,
+org.oiue.tools,
+org.oiue.tools.map,
+org.oiue.tools.string
+		</project.import>
 	</properties>
 </project>

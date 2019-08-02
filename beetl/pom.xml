@@ -23,10 +23,10 @@
 	<parent>
 		<groupId>org.oiue.services.templates</groupId>
 		<artifactId>parent</artifactId>
-		<version>1.0.1</version>
+		<version>1.1.0-SNAPSHOT</version>
 	</parent>
 	<properties>
-		<project.activator>${artifactId}.Activator</project.activator>
+		<project.activator>${project.artifactId}.Activator</project.activator>
 		<project.dependency>beetl,antlr4-runtime</project.dependency>
 		<project.import>org.oiue.service.template,
 							org.oiue.service.osgi,

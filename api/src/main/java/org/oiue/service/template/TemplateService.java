@@ -9,7 +9,7 @@ import javax.servlet.http.HttpServletResponse;
 import org.oiue.tools.StatusResult;
 
 public interface TemplateService extends Serializable {
-
-    public StatusResult render(HttpServletRequest request, HttpServletResponse response,Map<String,?> parameter);
-    
+	
+	public StatusResult render(HttpServletRequest request, HttpServletResponse response, Map<String, ?> parameter);
+	
 }
